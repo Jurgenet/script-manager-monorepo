@@ -1,0 +1,4 @@
+{
+  "presets": [["@babel/preset-env", { "useBuiltIns": "entry" }], "@babel/preset-react"],
+  "plugins": ["vuera/babel"]
+}

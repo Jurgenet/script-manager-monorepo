@@ -1,0 +1,24 @@
+{
+  "name": "script-manager-monorepo",
+  "scripts": {
+    "build:lib": "lerna run build:rollup --scope=script-manager",
+    "start": "lerna run start --scope=showcase",
+    "new-version": "lerna version --conventionsl-commits --yes",
+    "echo": "lerna run echo --scope={script-manager,showcase}"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.1",
+    "eslint": "5.12.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jurgenet/script-manager-monorepo.git"
+  },
+  "description": "",
+  "author": "Yuri Ivanchenko <tech.jurgenet@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
